@@ -38,7 +38,7 @@
         }
           .form-text2{
               margin-top:1rem;
-              font-size:1.2em;
+              font-size: 0.5em;
               color:#474c52
               }
         #mobile-option{
@@ -47,16 +47,15 @@
         #desktop-option{
           display: none;
         }
-      
-              
-       
+        .display-4 {
+          font-size: 25px !important;
         }
-
-
-        
+    
+        }
+       
         .form-text2{
               margin-top: 0.2rem;
-              font-size:1.4em;
+              font-size:1.0em;
               color:#474c52
               }
        
@@ -97,3 +96,7 @@
 .dropdown-toggle::after {
     border-top: none !important;
 }
+   .display-4 {
+          font-size: 35px !important;
+          margin-top: 2px;
+        }
