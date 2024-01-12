@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Jobs | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="https://htmlstream.com/preview/front-v4.3.1/favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
+<!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css"
+  rel="stylesheet"
+/>
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/animate.min.css">
+  <link rel="stylesheet" href="../assets/css/vendor.min.css">
+  <link rel="stylesheet" href="../assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
+  
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+
+
+     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="../assets/css/theme.minc619.css?v=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    // Declare variables globally
+    var lati_a, longi_a;
+
+    // Function to get the device's location using Geolocation API
+    function getDeviceLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          function (position) {
+            lati_a = position.coords.latitude;
+            longi_a = position.coords.longitude;
+
+            // Display the device location on the page
+            $("#device-location").text("Device Location: " + lati_a + ", " + longi_a);
+
+            // Call the function to initialize the map with the obtained location
+            initMap(lati_a, longi_a);
+          },
+          function (error) {
+            console.error("Error getting device location:", error.message);
+          }
+        );
+      } else {
+        console.error("Geolocation is not supported by this browser.");
+      }
+    }
+
+    // Function to initialize the map
+    function initMap(lati_a, longi_a) {
+      var mapProp= {
+        center: new google.maps.LatLng(lati_a, longi_a),
+        zoom: 15,
+      };
+      var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+    }
+
+    // Call the function to get the device location when the page loads
+    $(document).ready(function () {
+      getDeviceLocation();
+    });
+  </script> 
+</head>
+</head>
+<body>
+<div >
+    <div style="width: 100%; height: 617px; ">
+      <div class="bg-imae">
+        <img class="w-100" src="https://mdbootstrap.com/img/new/blog/25.jpg"
+          style="height: 617px; object-position: center; object-fit: cover; border-radius: 34px;"
+          alt="Background sailing photo">
+        <div class="mask " style="background-color: rgba(67, 144, 149, 0.5); border-radius: 34px;">
+          <div class="row align-items-center h-100">
+            <div class="col-12">
+              <!-- Carousel wrapper -->
+              <div id="carouselBasicExample" class="carousel slide" data-mdb-ride="carousel">
+                <!-- Indicators -->
+         
+
+                <!-- Inner -->
+                <div class="carousel-inner overflow-visile">
+                  <!-- Single item -->
+                  <div class="carousel-item active">
+                    <div class="carousel-caption position-relative start-0 end-0">
+                      <h5 class="text-uppercase fw-bold ls-wider">Discover</h5>
+                      <p class="small">See where you can spend the best moments</p>
+                    </div>
+                  </div>
+          
+                </div>
+                <!-- Inner -->
+              </div></div></div></div></div></div></div>
+              
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYbMM-E_fdcKzg6Wyh34vvybIvpjIWGNY&callback=initMap"></script>
+
+</body>
+</html>

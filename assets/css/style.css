@@ -1,0 +1,99 @@
+   
+       @media only screen and (min-width:3099px) {
+        .navbar-brand-logo{
+          font-size: 4rem;
+        }
+        .mobile-option{
+          display: hidden;
+        }
+        }
+
+
+
+        @media only screen and (min-width:1199px) {
+          .navbar-brand-logo{
+          font-size: 4rem;
+        }
+        .mobile-option{
+          display: hidden;
+        }
+       
+        }
+
+
+         @media (max-width: 1199px) {
+          .navbar-brand-logo{
+          font-size: 4rem;
+          
+        }
+        #mobile-option{
+          display: none;
+        }
+         }
+
+         @media (max-width: 768px) {
+         .navbar-brand .navbar-brand-logo{
+          font-size: 4rem !important;
+          
+        }
+          .form-text2{
+              margin-top:1rem;
+              font-size:1.2em;
+              color:#474c52
+              }
+        #mobile-option{
+          display: block;
+        }
+        #desktop-option{
+          display: none;
+        }
+      
+              
+       
+        }
+
+
+        
+        .form-text2{
+              margin-top: 0.2rem;
+              font-size:1.4em;
+              color:#474c52
+              }
+       
+        .form-tester{
+              padding-top:1.5rem;
+              
+            
+              }
+        
+
+    
+
+
+
+    @media (min-width:1200px){    
+        #display-four{
+            /* font-size:calc(1.475rem + 2.7vw); */
+            font-weight:600;
+            line-height:1.2
+            }
+        }
+    @media (min-width:1200px){
+        #display-four{
+            font-size:2.5rem
+            }
+
+
+
+            
+        #mobile-option{
+          display: none;
+        }
+        
+        }
+
+
+
+.dropdown-toggle::after {
+    border-top: none !important;
+}
